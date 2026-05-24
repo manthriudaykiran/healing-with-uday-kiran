@@ -17,8 +17,8 @@ const config: Config = {
           goldSoft: "#60A5FA",    // softer accent
           emerald: "#7DD3FC",     // cyan glow
           emeraldSoft: "#1E40AF", // deep blue
-          beige: "#0F1437",       // raised surface
-          ivory: "#05071A",       // page background (deep space)
+          beige: "#0A1228",       // raised surface
+          ivory: "#020617",       // page background (near-black navy)
           ink: "#F8FAFC",         // primary text (near-white)
         },
       },
@@ -28,7 +28,7 @@ const config: Config = {
       },
       backgroundImage: {
         "calm-gradient":
-          "linear-gradient(135deg, #05071A 0%, #0A1030 45%, #1E3A8A 100%)",
+          "linear-gradient(180deg, #020617 0%, #050B25 60%, #0B1A45 100%)",
         "emerald-glow":
           "radial-gradient(circle at 30% 20%, rgba(125,211,252,0.25), transparent 60%), radial-gradient(circle at 80% 70%, rgba(59,130,246,0.25), transparent 55%)",
       },
