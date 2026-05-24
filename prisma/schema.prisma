@@ -1,0 +1,46 @@
+// Postgres-ready schema. Dormant until internal auth replaces TagMango.
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id        String   @id @default(cuid())
+  email     String   @unique
+  name      String?
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+  bookings  Booking[]
+}
+
+model Course {
+  id          String   @id @default(cuid())
+  slug        String   @unique
+  title       String
+  summary     String
+  priceCents  Int      @default(0)
+  externalUrl String?
+  createdAt   DateTime @default(now())
+}
+
+model Booking {
+  id        String   @id @default(cuid())
+  userId    String
+  user      User     @relation(fields: [userId], references: [id])
+  startsAt  DateTime
+  status    String   @default("pending")
+  createdAt DateTime @default(now())
+}
+
+model Testimonial {
+  id        String   @id @default(cuid())
+  author    String
+  role      String?
+  body      String
+  rating    Int      @default(5)
+  createdAt DateTime @default(now())
+}
