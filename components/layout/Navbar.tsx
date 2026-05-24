@@ -25,9 +25,6 @@ export function Navbar() {
     >
       <Container className="flex h-20 items-center justify-between">
         <Link href="/" className="flex items-center gap-2">
-          <span className="grid h-9 w-9 place-items-center rounded-full bg-brand-gold/15 text-brand-gold">
-            ॐ
-          </span>
           <span className="font-display text-lg text-brand-ink">Healing with Uday Kiran</span>
         </Link>
 
