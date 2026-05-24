@@ -1,11 +1,15 @@
 import { NextRequest, NextResponse } from "next/server";
-import { TAGMANGO_URL } from "@/modules/tagmango/redirect";
+import { TAGMANGO_URL, TAGMANGO_LOGIN_URL } from "@/modules/tagmango/redirect";
 
-const EXTERNAL_AUTH_ROUTES = ["/login", "/dashboard", "/member", "/account"];
+const LOGIN_ROUTES = ["/login"];
+const DASHBOARD_ROUTES = ["/dashboard", "/member", "/account"];
 
 export function middleware(req: NextRequest) {
   const { pathname } = req.nextUrl;
-  if (EXTERNAL_AUTH_ROUTES.some((p) => pathname === p || pathname.startsWith(p + "/"))) {
+  if (LOGIN_ROUTES.some((p) => pathname === p || pathname.startsWith(p + "/"))) {
+    return NextResponse.redirect(TAGMANGO_LOGIN_URL);
+  }
+  if (DASHBOARD_ROUTES.some((p) => pathname === p || pathname.startsWith(p + "/"))) {
     return NextResponse.redirect(TAGMANGO_URL);
   }
   return NextResponse.next();

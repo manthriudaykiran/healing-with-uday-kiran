@@ -4,7 +4,7 @@ import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import { PRIMARY_NAV } from "@/modules/navigation/nav.config";
-import { TAGMANGO_URL, TAGMANGO_LABELS } from "@/modules/tagmango/redirect";
+import { TAGMANGO_LOGIN_URL, TAGMANGO_LABELS } from "@/modules/tagmango/redirect";
 import { Button } from "@/components/ui/button";
 import { Container } from "@/components/ui/container";
 import { useScrollY } from "@/hooks/useScrollY";
@@ -41,7 +41,7 @@ export function Navbar() {
         </nav>
 
         <div className="hidden lg:block">
-          <a href={TAGMANGO_URL} target="_blank" rel="noreferrer">
+          <a href={TAGMANGO_LOGIN_URL} target="_blank" rel="noreferrer">
             <Button variant="gold" size="md">
               {TAGMANGO_LABELS.login}
             </Button>
@@ -76,7 +76,7 @@ export function Navbar() {
                   {item.label}
                 </Link>
               ))}
-              <a href={TAGMANGO_URL} target="_blank" rel="noreferrer" className="mt-2">
+              <a href={TAGMANGO_LOGIN_URL} target="_blank" rel="noreferrer" className="mt-2">
                 <Button variant="gold" className="w-full">
                   {TAGMANGO_LABELS.login}
                 </Button>
