@@ -19,11 +19,11 @@ export function CTA({
   return (
     <section className="py-24">
       <Container>
-        <div className="relative overflow-hidden rounded-[2rem] bg-brand-ink px-8 py-16 text-center text-brand-ivory sm:px-16 sm:py-24">
+        <div className="relative overflow-hidden rounded-[2rem] border border-white/10 bg-gradient-to-br from-brand-emeraldSoft via-brand-beige to-brand-ivory px-8 py-16 text-center text-brand-ink sm:px-16 sm:py-24">
           <div className="absolute inset-0 bg-emerald-glow opacity-30" aria-hidden />
           <Eyebrow className="relative">{eyebrow}</Eyebrow>
           <h2 className="relative mt-4 font-display text-3xl sm:text-5xl">{title}</h2>
-          <p className="relative mx-auto mt-4 max-w-xl text-brand-ivory/70">{description}</p>
+          <p className="relative mx-auto mt-4 max-w-xl text-brand-ink/75">{description}</p>
           <div className="relative mt-8 flex justify-center">
             <Link href={href}>
               <Button variant="gold" size="lg">

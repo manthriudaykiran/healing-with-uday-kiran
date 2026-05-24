@@ -7,7 +7,7 @@ import { Button } from "@/components/ui/button";
 
 export function CoursesPreview() {
   return (
-    <Section className="bg-brand-ivory">
+    <Section className="bg-brand-beige/40">
       <Container>
         <div className="flex flex-col items-start justify-between gap-6 md:flex-row md:items-end">
           <div className="max-w-xl">

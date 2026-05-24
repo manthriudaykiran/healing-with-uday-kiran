@@ -8,10 +8,10 @@ const buttonVariants = cva(
     variants: {
       variant: {
         primary:
-          "bg-brand-ink text-brand-ivory hover:bg-brand-emerald shadow-soft hover:shadow-glow",
-        gold: "bg-brand-gold text-brand-ink hover:bg-brand-goldSoft shadow-soft hover:shadow-glow",
+          "bg-brand-gold text-white hover:bg-brand-goldSoft shadow-soft hover:shadow-glow",
+        gold: "bg-gradient-to-r from-brand-gold to-brand-emerald text-white hover:opacity-90 shadow-soft hover:shadow-glow",
         outline:
-          "border border-brand-ink/20 text-brand-ink hover:border-brand-gold hover:text-brand-gold bg-transparent",
+          "border border-white/20 text-brand-ink hover:border-brand-gold hover:text-brand-gold bg-transparent",
         ghost: "text-brand-ink hover:text-brand-gold",
       },
       size: {

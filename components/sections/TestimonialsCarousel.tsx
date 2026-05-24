@@ -14,7 +14,7 @@ export function TestimonialsCarousel() {
   const t = TESTIMONIALS[i];
 
   return (
-    <Section className="bg-gradient-to-b from-white to-brand-beige">
+    <Section className="bg-gradient-to-b from-transparent to-brand-beige/60">
       <Container>
         <div className="text-center">
           <Eyebrow>Words from the room</Eyebrow>
@@ -32,7 +32,7 @@ export function TestimonialsCarousel() {
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -20 }}
               transition={{ duration: 0.5 }}
-              className="rounded-3xl bg-white/70 p-10 text-center shadow-soft backdrop-blur"
+              className="rounded-3xl border border-white/10 bg-white/[0.04] p-10 text-center shadow-soft backdrop-blur-md"
             >
               <p className="font-display text-xl leading-relaxed text-brand-ink sm:text-2xl">
                 "{t.body}"

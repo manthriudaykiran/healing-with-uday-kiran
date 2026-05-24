@@ -5,7 +5,7 @@ export function Card({ className, ...props }: React.HTMLAttributes<HTMLDivElemen
   return (
     <div
       className={cn(
-        "rounded-3xl border border-brand-ink/5 bg-white/70 p-8 shadow-soft backdrop-blur-sm transition-all duration-500 hover:-translate-y-1 hover:shadow-glow",
+        "rounded-3xl border border-white/10 bg-white/[0.04] p-8 shadow-soft backdrop-blur-md transition-all duration-500 hover:-translate-y-1 hover:border-brand-goldSoft/40 hover:shadow-glow",
         className,
       )}
       {...props}
@@ -20,5 +20,5 @@ export function CardTitle({ className, ...props }: React.HTMLAttributes<HTMLHead
 }
 
 export function CardDescription({ className, ...props }: React.HTMLAttributes<HTMLParagraphElement>) {
-  return <p className={cn("mt-2 text-sm leading-relaxed text-brand-ink/70", className)} {...props} />;
+  return <p className={cn("mt-2 text-sm leading-relaxed text-brand-ink/65", className)} {...props} />;
 }

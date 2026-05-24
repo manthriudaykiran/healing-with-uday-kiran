@@ -15,8 +15,13 @@ html {
 
 body {
   @apply bg-brand-ivory text-brand-ink font-sans;
+  background-image:
+    radial-gradient(circle at 15% 10%, rgba(59, 130, 246, 0.18), transparent 45%),
+    radial-gradient(circle at 85% 80%, rgba(125, 211, 252, 0.12), transparent 50%);
+  background-attachment: fixed;
 }
 
 ::selection {
-  background-color: rgba(201, 162, 75, 0.25);
+  background-color: rgba(96, 165, 250, 0.35);
+  color: #ffffff;
 }

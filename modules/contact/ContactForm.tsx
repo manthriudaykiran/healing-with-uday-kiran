@@ -39,7 +39,7 @@ function Field({
   textarea?: boolean;
 }) {
   const cls =
-    "w-full rounded-2xl border border-brand-ink/10 bg-white/70 px-4 py-3 text-sm text-brand-ink outline-none transition focus:border-brand-gold focus:ring-2 focus:ring-brand-gold/30";
+    "w-full rounded-2xl border border-white/10 bg-white/[0.04] px-4 py-3 text-sm text-brand-ink placeholder:text-brand-ink/40 outline-none backdrop-blur-md transition focus:border-brand-gold focus:ring-2 focus:ring-brand-gold/30";
   return (
     <label className="block">
       <span className="mb-2 block text-xs uppercase tracking-[0.2em] text-brand-ink/60">

@@ -5,7 +5,7 @@ import { siteConfig } from "@/config/site";
 
 export function Footer() {
   return (
-    <footer className="border-t border-brand-ink/5 bg-brand-ivory">
+    <footer className="border-t border-white/5 bg-brand-beige">
       <Container className="grid grid-cols-1 gap-12 py-16 md:grid-cols-4">
         <div>
           <h3 className="font-display text-xl text-brand-ink">{siteConfig.name}</h3>
@@ -35,7 +35,7 @@ export function Footer() {
           </div>
         ))}
       </Container>
-      <div className="border-t border-brand-ink/5">
+      <div className="border-t border-white/5">
         <Container className="flex flex-col items-center justify-between gap-2 py-6 text-xs text-brand-ink/50 sm:flex-row">
           <p>© {new Date().getFullYear()} {siteConfig.name}. All rights reserved.</p>
           <p>Crafted with intention.</p>

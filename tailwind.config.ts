@@ -12,13 +12,14 @@ const config: Config = {
     extend: {
       colors: {
         brand: {
-          gold: "#C9A24B",
-          goldSoft: "#E7D6A8",
-          emerald: "#4F8A78",
-          emeraldSoft: "#A8C9BD",
-          beige: "#F6F1E7",
-          ivory: "#FBF9F4",
-          ink: "#1F2A2E",
+          // Repurposed semantic tokens — names kept so existing components keep working.
+          gold: "#3B82F6",        // primary accent (electric blue)
+          goldSoft: "#60A5FA",    // softer accent
+          emerald: "#7DD3FC",     // cyan glow
+          emeraldSoft: "#1E40AF", // deep blue
+          beige: "#0F1437",       // raised surface
+          ivory: "#05071A",       // page background (deep space)
+          ink: "#F8FAFC",         // primary text (near-white)
         },
       },
       fontFamily: {
@@ -27,13 +28,13 @@ const config: Config = {
       },
       backgroundImage: {
         "calm-gradient":
-          "linear-gradient(135deg, #FBF9F4 0%, #F6F1E7 45%, #E7D6A8 100%)",
+          "linear-gradient(135deg, #05071A 0%, #0A1030 45%, #1E3A8A 100%)",
         "emerald-glow":
-          "radial-gradient(circle at 30% 20%, rgba(168,201,189,0.45), transparent 60%)",
+          "radial-gradient(circle at 30% 20%, rgba(125,211,252,0.25), transparent 60%), radial-gradient(circle at 80% 70%, rgba(59,130,246,0.25), transparent 55%)",
       },
       boxShadow: {
-        soft: "0 10px 40px -12px rgba(31,42,46,0.18)",
-        glow: "0 0 0 1px rgba(201,162,75,0.25), 0 20px 60px -20px rgba(201,162,75,0.35)",
+        soft: "0 10px 40px -12px rgba(0,0,0,0.6)",
+        glow: "0 0 0 1px rgba(96,165,250,0.35), 0 20px 60px -20px rgba(59,130,246,0.5)",
       },
       animation: {
         "fade-up": "fadeUp 0.8s ease-out both",
